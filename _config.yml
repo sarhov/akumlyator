@@ -2,7 +2,7 @@
 title: site title
 email: your-email@domain.com
 description: "site description"
-baseurl: "sarhov.github.io/akumlyator/"
+baseurl: "sarhov.github.io/akumlyator"
 url: "/"
 
 # Build settings
