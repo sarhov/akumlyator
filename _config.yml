@@ -1,0 +1,10 @@
+# Site settings
+title: site title
+email: your-email@domain.com
+description: "site description"
+baseurl: ""
+url: "/"
+
+# Build settings
+markdown: rdiscount
+permalink: pretty
