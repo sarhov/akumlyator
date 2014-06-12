@@ -3,8 +3,8 @@ title: site title
 email: your-email@domain.com
 description: "site description"
 encoding: utf-8
-baseurl: "http://sarhov.github.io/akumlyator"
-url: "/"
+baseurl: "/"
+url: "http://sarhov.github.io/akumlyator"
 
 # Build settings
 markdown: rdiscount
