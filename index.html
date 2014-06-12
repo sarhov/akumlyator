@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Главная
+title: Главная Страница
 ---
 
 {% for page in site.pages %}
-  <a href="{{page.url | prepeand: site.baseurl}}">{{page.title}}</a>
+  <a href="{{page.url | prepeand: site.baseurl }}">{{page.title}}</a>
 {% endfor %}
