@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/screen.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
 </head>
-<body class="{{page.url}}">
+<body class="{% if page.url == '/' %} home {% else %} {{page.url | first }} {% endif %}">
 
-      {{ content }}
+  <header class="header">
+    <div class="header__top header__top_inner clearfix">
+      <a href="tel:+37494773302" class="header__top_site-phone ">
+        <i class="fa fa-phone "></i>
+        1-800-234-5677
+      </a> 
+      <a href="#" class="header__top_registration">
+        <i class="fa fa-file-o">
+          
+        </i>
+        Регистрация
+      </a>
+      <a href="#" class="header__top_login">
+        <i class="fa fa-lock"></i>
+        Войти
+      </a>
+
+    </div>
+  </header>
+  
+
 
   <script src="{{"/js/jquery-1.8.3.min.js" | prepand: site.baseurl }}"></script>
   <script src="{{"/js/functions.js" | prepand: site.baseurl}}"></script>

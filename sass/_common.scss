@@ -1,0 +1,90 @@
+*, *:before, *:after{
+	@include box-sizing(border-box)
+}
+
+.clearfix{
+	@include pie-clearfix;
+}
+
+a{
+	text-decoration: none;
+	color: #f0f0f0;
+}
+
+html{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+@mixin inner{
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.header{
+	background:#333;
+}
+
+.header__top_inner{
+	@include inner;
+	padding: 15px 0;
+
+	.fa{
+		color: #b10217;
+	}
+
+	@include medium1230{
+		padding: 15px 20px;
+	}
+
+}
+
+.header__top_site-phone{
+	font-size: 27px;
+	font-weight: bold;
+	color: #f0f0f0;
+}
+
+.header__top_login{
+	float: right;
+	color: #888585;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	font-size: 15px;
+	@include inline-block;
+	&:hover{
+		color: #fff;
+	}
+
+	.fa{
+		font-size: 27px;
+		position: relative;
+		top: 3px;
+		margin-right: 5px;
+	}
+}
+
+.header__top_registration{
+	float: right;
+	margin-left: 20px;
+	font-size: 15px;
+	color: #888585;
+	font-weight: bold;
+	text-transform: uppercase;
+	@include inline-block;
+	margin-top: 5px;
+	&:hover{
+		color: #fff;
+	}
+
+	.fa{
+		font-size: 20px;
+		position: relative;
+		top: 3px;
+		margin-right: 5px;
+		font-weight: bold;
+	}
+}
+

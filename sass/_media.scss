@@ -1,5 +1,5 @@
-@media screen {
-	body{
-		background:transparent url('image.png') left top; 
+@mixin medium1230{
+	@media only screen and (max-width: 1230px){
+		@content 
 	}
 }

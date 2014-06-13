@@ -67,9 +67,118 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-@media screen {
-  /* line 2, ../sass/_media.scss */
-  body {
-    background: transparent url("image.png") left top;
+/* line 1, ../sass/_common.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/_common.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 9, ../sass/_common.scss */
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+/* line 14, ../sass/_common.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+/* line 25, ../sass/_common.scss */
+.header {
+  background: #333;
+}
+
+/* line 29, ../sass/_common.scss */
+.header__top_inner {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+/* line 33, ../sass/_common.scss */
+.header__top_inner .fa {
+  color: #b10217;
+}
+@media only screen and (max-width: 1230px) {
+  /* line 29, ../sass/_common.scss */
+  .header__top_inner {
+    padding: 15px 20px;
   }
+}
+
+/* line 43, ../sass/_common.scss */
+.header__top_site-phone {
+  font-size: 27px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+/* line 49, ../sass/_common.scss */
+.header__top_login {
+  float: right;
+  color: #888585;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 57, ../sass/_common.scss */
+.header__top_login:hover {
+  color: #fff;
+}
+/* line 61, ../sass/_common.scss */
+.header__top_login .fa {
+  font-size: 27px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+/* line 69, ../sass/_common.scss */
+.header__top_registration {
+  float: right;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #888585;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-top: 5px;
+}
+/* line 78, ../sass/_common.scss */
+.header__top_registration:hover {
+  color: #fff;
+}
+/* line 82, ../sass/_common.scss */
+.header__top_registration .fa {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+  font-weight: bold;
 }
