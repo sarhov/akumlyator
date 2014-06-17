@@ -95,39 +95,41 @@ a {
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  background: url(../img/bg.png) 0 0 repeat #1f1f1f;
+  background: url(../img/bg-1.png) 0 0 repeat-x, url(../img/bg.png) 0 0 repeat #1f1f1f;
 }
 
-/* line 25, ../sass/_common.scss */
+/* line 37, ../sass/_common.scss */
 .header {
   background: #333;
 }
 
-/* line 29, ../sass/_common.scss */
+/* line 41, ../sass/_common.scss */
 .header__top_inner {
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 13px 0 15px 0;
 }
-/* line 33, ../sass/_common.scss */
+/* line 45, ../sass/_common.scss */
 .header__top_inner .fa {
   color: #b10217;
 }
 @media only screen and (max-width: 1230px) {
-  /* line 29, ../sass/_common.scss */
+  /* line 41, ../sass/_common.scss */
   .header__top_inner {
-    padding: 15px 20px;
+    padding: 13px 20px 15px 20px;
   }
 }
 
-/* line 43, ../sass/_common.scss */
+/* line 55, ../sass/_common.scss */
 .header__top_site-phone {
   font-size: 27px;
   font-weight: bold;
   color: #f0f0f0;
 }
 
-/* line 49, ../sass/_common.scss */
+/* line 61, ../sass/_common.scss */
 .header__top_login {
   float: right;
   color: #888585;
@@ -142,11 +144,11 @@ html {
   zoom: 1;
   *display: inline;
 }
-/* line 57, ../sass/_common.scss */
+/* line 69, ../sass/_common.scss */
 .header__top_login:hover {
   color: #fff;
 }
-/* line 61, ../sass/_common.scss */
+/* line 73, ../sass/_common.scss */
 .header__top_login .fa {
   font-size: 27px;
   position: relative;
@@ -154,7 +156,7 @@ html {
   margin-right: 5px;
 }
 
-/* line 69, ../sass/_common.scss */
+/* line 81, ../sass/_common.scss */
 .header__top_registration {
   float: right;
   margin-left: 20px;
@@ -170,15 +172,125 @@ html {
   *display: inline;
   margin-top: 5px;
 }
-/* line 78, ../sass/_common.scss */
+/* line 90, ../sass/_common.scss */
 .header__top_registration:hover {
   color: #fff;
 }
-/* line 82, ../sass/_common.scss */
+/* line 94, ../sass/_common.scss */
 .header__top_registration .fa {
   font-size: 20px;
   position: relative;
   top: 3px;
   margin-right: 5px;
   font-weight: bold;
+}
+
+/* line 103, ../sass/_common.scss */
+.b-top {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  margin: 40px auto;
+}
+
+/* line 108, ../sass/_common.scss */
+.b-top__siteTitle {
+  float: left;
+}
+@media only screen and (max-width: 1230px) {
+  /* line 108, ../sass/_common.scss */
+  .b-top__siteTitle {
+    padding-left: 20px;
+  }
+}
+
+/* line 115, ../sass/_common.scss */
+.b-top__cart {
+  float: right;
+  margin-top: 20px;
+  background: #595959;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+/* line 122, ../sass/_common.scss */
+.b-top__cart .fa {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+/* line 129, ../sass/_common.scss */
+.b-top__search {
+  position: relative;
+  padding-right: 30px;
+  background: #333333;
+  float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+/* line 140, ../sass/_common.scss */
+.b-top__search_submit {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* line 149, ../sass/_common.scss */
+.b-top__search_submit:hover, .b-top__search_submit:focus, .b-top__search_submit:active {
+  color: #b10217;
+}
+
+/* line 154, ../sass/_common.scss */
+.b-top__search_inputSearch {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+/* line 165, ../sass/_common.scss */
+.b-top__cart_link_text {
+  font-weight: bold;
+}
+
+/* line 170, ../sass/_common.scss */
+.main__header {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: #B10217;
+  border-radius: 10px 10px 0 0;
+}
+
+/* line 177, ../sass/_common.scss */
+.main__header_navigation_link {
+  padding: 20px 5px;
+  margin-right: 10px;
+  display: block;
+  float: left;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+/* line 186, ../sass/_common.scss */
+.main__header_navigation_link:hover {
+  background: #282828;
+}
+/* line 189, ../sass/_common.scss */
+.main__header_navigation_link.is-active {
+  background: #282828;
 }

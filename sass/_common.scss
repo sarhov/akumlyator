@@ -14,7 +14,12 @@ a{
 html{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
+	// for ie 8
+	background:url(../img/bg.png) 0 0 repeat #1F1F1F;
+	background:  url(../img/bg-1.png) 0 0 repeat-x,  url(../img/bg.png) 0 0 repeat #1F1F1F;
 }
+
+
 
 @mixin inner{
 	width: 100%;
@@ -22,20 +27,27 @@ html{
 	margin: 0 auto;
 }
 
+@mixin no-style{
+	background:none;
+	border: none;
+}
+
+
+
 .header{
 	background:#333;
 }
 
 .header__top_inner{
 	@include inner;
-	padding: 15px 0;
+	padding: 13px 0 15px 0;
 
 	.fa{
 		color: #b10217;
 	}
 
 	@include medium1230{
-		padding: 15px 20px;
+		padding: 13px 20px 15px 20px;
 	}
 
 }
@@ -85,6 +97,97 @@ html{
 		top: 3px;
 		margin-right: 5px;
 		font-weight: bold;
+	}
+}
+
+.b-top{
+	@include inner;
+	margin: 40px auto;
+}
+
+.b-top__siteTitle{
+	float: left;
+	@include medium1230{
+		padding-left: 20px;
+	}
+}
+
+.b-top__cart{
+	float: right;
+	margin-top: 20px;
+	background:#595959;
+	padding: 16px;
+	font-size: 16px;
+	border-radius: 3px;
+	.fa{
+		margin-left: 30px;
+		font-size: 18px;
+	}
+
+}
+
+.b-top__search{
+	position: relative;
+	padding-right: 30px;
+	// display: inline-block;
+	background:#333333;
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+
+.b-top__search_submit{
+	@include no-style;
+	position: absolute;
+	top: 0;
+	bottom:0;
+	right: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	&:hover, &:focus, &:active{
+		color: #b10217;
+	}
+}
+
+.b-top__search_inputSearch{
+	@include no-style;
+	padding: 10px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.b-top__cart_link_text{
+	font-weight: bold;
+	
+}
+
+.main__header{
+	@include inner;
+	padding: 0 20px;
+	background: #B10217;
+	border-radius: 10px 10px 0 0 
+}
+
+.main__header_navigation_link{
+	padding: 20px 5px;
+	margin-right: 10px;
+	display: block;
+	float: left;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 17px;
+	&:hover{
+		background: #282828;
+	}
+	&.is-active{
+		background: #282828;
 	}
 }
 
