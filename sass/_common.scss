@@ -175,8 +175,8 @@ html{
 }
 
 .main__header_navigation_link{
-	padding: 20px 5px;
-	margin-right: 10px;
+	padding: 18px 8px;
+	// margin-right: 10px;
 	display: block;
 	float: left;
 	font-weight: 600;
@@ -189,5 +189,30 @@ html{
 	&.is-active{
 		background: #282828;
 	}
+
+	.fa{
+		font-size: 27px;
+		margin-right: 4px;
+	}
 }
 
+.main-block{
+	@include inner;
+	padding: 30px 30px 50px 30px;
+	background: #F0F0F0;
+}
+
+.content{
+	float: right;
+	width: 75%;
+	padding-left: 30px;
+	height: 400px;
+	background: #444;
+}
+
+.sidebar{
+	float: left;
+	width: 25%;
+	height: 400px;
+	background: #9c0;
+}

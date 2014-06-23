@@ -277,8 +277,7 @@ html {
 
 /* line 177, ../sass/_common.scss */
 .main__header_navigation_link {
-  padding: 20px 5px;
-  margin-right: 10px;
+  padding: 18px 8px;
   display: block;
   float: left;
   font-weight: 600;
@@ -293,4 +292,35 @@ html {
 /* line 189, ../sass/_common.scss */
 .main__header_navigation_link.is-active {
   background: #282828;
+}
+/* line 193, ../sass/_common.scss */
+.main__header_navigation_link .fa {
+  font-size: 27px;
+  margin-right: 4px;
+}
+
+/* line 199, ../sass/_common.scss */
+.main-block {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 30px 30px 50px 30px;
+  background: #F0F0F0;
+}
+
+/* line 205, ../sass/_common.scss */
+.content {
+  float: right;
+  width: 75%;
+  padding-left: 30px;
+  height: 400px;
+  background: #444;
+}
+
+/* line 213, ../sass/_common.scss */
+.sidebar {
+  float: left;
+  width: 25%;
+  height: 400px;
+  background: #9c0;
 }
