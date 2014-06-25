@@ -249,6 +249,21 @@
       <!-- sidebar -->
     </main>
     <!-- main-block -->
+    <footer class="footer">
+      <div class="footer_block">
+        <h4 class="footer__block_headline">
+          Название блока
+        </h4>
+        <div class="footer__block_content">
+          <nav class="footer__block_content_navigation">
+          {% for link in (1..5)  %}
+             <a href="#" class="footer__block_content_navigation_link {% if forloop.index == 2 %} is-active {% endif %}"> название ссылки {{forloop.index}} </a>
+          {% endfor %}
+           
+          </nav>
+        </div>
+      </div>
+    </footer>
 
   </section>
   <!-- main -->
