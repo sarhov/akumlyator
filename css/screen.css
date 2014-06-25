@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,53 +24,53 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 1, ../sass/_common.scss */
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -78,7 +78,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .clearfix {
   *zoom: 1;
 }
-/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after {
   content: "";
   display: table;
@@ -99,37 +99,37 @@ html {
   background: url(../img/bg-1.png) 0 0 repeat-x, url(../img/bg.png) 0 0 repeat #1f1f1f;
 }
 
-/* line 37, ../sass/_common.scss */
+/* line 41, ../sass/_common.scss */
 .header {
   background: #333;
 }
 
-/* line 41, ../sass/_common.scss */
+/* line 45, ../sass/_common.scss */
 .header__top_inner {
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
   padding: 13px 0 15px 0;
 }
-/* line 45, ../sass/_common.scss */
+/* line 48, ../sass/_common.scss */
 .header__top_inner .fa {
   color: #b10217;
 }
 @media only screen and (max-width: 1230px) {
-  /* line 41, ../sass/_common.scss */
+  /* line 45, ../sass/_common.scss */
   .header__top_inner {
     padding: 13px 20px 15px 20px;
   }
 }
 
-/* line 55, ../sass/_common.scss */
+/* line 56, ../sass/_common.scss */
 .header__top_site-phone {
   font-size: 27px;
   font-weight: bold;
   color: #f0f0f0;
 }
 
-/* line 61, ../sass/_common.scss */
+/* line 62, ../sass/_common.scss */
 .header__top_login {
   float: right;
   color: #888585;
@@ -137,14 +137,13 @@ html {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   font-size: 15px;
-  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  zoom: 1;
+  *zoom: 1;
   *display: inline;
 }
-/* line 69, ../sass/_common.scss */
+/* line 70, ../sass/_common.scss */
 .header__top_login:hover {
   color: #fff;
 }
@@ -164,11 +163,10 @@ html {
   color: #888585;
   font-weight: bold;
   text-transform: uppercase;
-  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  zoom: 1;
+  *zoom: 1;
   *display: inline;
   margin-top: 5px;
 }
@@ -176,7 +174,7 @@ html {
 .header__top_registration:hover {
   color: #fff;
 }
-/* line 94, ../sass/_common.scss */
+/* line 93, ../sass/_common.scss */
 .header__top_registration .fa {
   font-size: 20px;
   position: relative;
@@ -185,7 +183,7 @@ html {
   font-weight: bold;
 }
 
-/* line 103, ../sass/_common.scss */
+/* line 102, ../sass/_common.scss */
 .b-top {
   width: 100%;
   max-width: 1230px;
@@ -193,18 +191,18 @@ html {
   margin: 40px auto;
 }
 
-/* line 108, ../sass/_common.scss */
+/* line 107, ../sass/_common.scss */
 .b-top__siteTitle {
   float: left;
 }
 @media only screen and (max-width: 1230px) {
-  /* line 108, ../sass/_common.scss */
+  /* line 107, ../sass/_common.scss */
   .b-top__siteTitle {
     padding-left: 20px;
   }
 }
 
-/* line 115, ../sass/_common.scss */
+/* line 114, ../sass/_common.scss */
 .b-top__cart {
   float: right;
   margin-top: 20px;
@@ -213,13 +211,13 @@ html {
   font-size: 16px;
   border-radius: 3px;
 }
-/* line 122, ../sass/_common.scss */
+/* line 121, ../sass/_common.scss */
 .b-top__cart .fa {
   margin-left: 30px;
   font-size: 18px;
 }
 
-/* line 129, ../sass/_common.scss */
+/* line 127, ../sass/_common.scss */
 .b-top__search {
   position: relative;
   padding-right: 30px;
@@ -230,7 +228,7 @@ html {
   border-radius: 3px;
 }
 
-/* line 140, ../sass/_common.scss */
+/* line 138, ../sass/_common.scss */
 .b-top__search_submit {
   background: none;
   border: none;
@@ -242,12 +240,12 @@ html {
   cursor: pointer;
   font-size: 20px;
 }
-/* line 149, ../sass/_common.scss */
+/* line 147, ../sass/_common.scss */
 .b-top__search_submit:hover, .b-top__search_submit:focus, .b-top__search_submit:active {
   color: #b10217;
 }
 
-/* line 154, ../sass/_common.scss */
+/* line 152, ../sass/_common.scss */
 .b-top__search_inputSearch {
   background: none;
   border: none;
@@ -260,12 +258,12 @@ html {
   color: #fff;
 }
 
-/* line 165, ../sass/_common.scss */
+/* line 163, ../sass/_common.scss */
 .b-top__cart_link_text {
   font-weight: bold;
 }
 
-/* line 170, ../sass/_common.scss */
+/* line 167, ../sass/_common.scss */
 .main__header {
   width: 100%;
   max-width: 1230px;
@@ -275,7 +273,7 @@ html {
   border-radius: 10px 10px 0 0;
 }
 
-/* line 177, ../sass/_common.scss */
+/* line 174, ../sass/_common.scss */
 .main__header_navigation_link {
   padding: 18px 8px;
   display: block;
@@ -285,21 +283,21 @@ html {
   text-transform: uppercase;
   font-size: 17px;
 }
-/* line 186, ../sass/_common.scss */
+/* line 183, ../sass/_common.scss */
 .main__header_navigation_link:hover {
   background: #282828;
 }
-/* line 189, ../sass/_common.scss */
+/* line 186, ../sass/_common.scss */
 .main__header_navigation_link.is-active {
   background: #282828;
 }
-/* line 193, ../sass/_common.scss */
+/* line 189, ../sass/_common.scss */
 .main__header_navigation_link .fa {
   font-size: 27px;
   margin-right: 4px;
 }
 
-/* line 199, ../sass/_common.scss */
+/* line 195, ../sass/_common.scss */
 .main-block {
   width: 100%;
   max-width: 1230px;
@@ -308,19 +306,296 @@ html {
   background: #F0F0F0;
 }
 
-/* line 205, ../sass/_common.scss */
+/* line 201, ../sass/_common.scss */
 .content {
   float: right;
   width: 75%;
   padding-left: 30px;
-  height: 400px;
-  background: #444;
+}
+
+/* line 209, ../sass/_common.scss */
+.slider {
+  margin-bottom: 30px;
 }
 
 /* line 213, ../sass/_common.scss */
 .sidebar {
   float: left;
   width: 25%;
-  height: 400px;
-  background: #9c0;
+}
+/* line 218, ../sass/_common.scss */
+.sidebar__block {
+  margin-bottom: 20px;
+}
+/* line 220, ../sass/_common.scss */
+.sidebar__block_headline {
+  color: #b10217;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+/* line 229, ../sass/_common.scss */
+.sidebar__menu {
+  overflow: hidden;
+  border-radius: 5px;
+}
+/* line 233, ../sass/_common.scss */
+.sidebar__menu__list_item:not(:first-child) {
+  border-top: 1px solid #212121;
+}
+/* line 238, ../sass/_common.scss */
+.sidebar__menu__list__submenu {
+  padding: 20px  0 20px 20px;
+  display: none;
+}
+/* line 241, ../sass/_common.scss */
+.sidebar__menu__list__submenu_item:last-child a {
+  margin-bottom: 0;
+}
+/* line 244, ../sass/_common.scss */
+.sidebar__menu__list__submenu_item_link {
+  font-size: 14px;
+  display: block;
+  color: #828181;
+  margin-bottom: 15px;
+}
+/* line 249, ../sass/_common.scss */
+.sidebar__menu__list__submenu_item_link:hover, .sidebar__menu__list__submenu_item_link.is-active {
+  color: #b10217;
+}
+/* line 254, ../sass/_common.scss */
+.sidebar__menu__list_item {
+  background: #595959;
+  position: relative;
+}
+/* line 255, ../sass/_common.scss */
+.sidebar__menu__list_item .fa {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #FFF;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* line 263, ../sass/_common.scss */
+.sidebar__menu__list_item > a {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  display: block;
+  padding: 16px 35px 16px 20px;
+  color: #fff;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 275, ../sass/_common.scss */
+.sidebar__menu__list_item:hover, .sidebar__menu__list_item.is-active {
+  background: #333333;
+}
+/* line 282, ../sass/_common.scss */
+.sidebar__brands_link {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+}
+/* line 290, ../sass/_common.scss */
+.sidebar__brands_link:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.7;
+}
+/* line 294, ../sass/_common.scss */
+.sidebar__brands_link img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+/* line 309, ../sass/_common.scss */
+.sidebar__widget_content_list {
+  counter-reset: links 0;
+}
+/* line 312, ../sass/_common.scss */
+.sidebar__widget_content_list_item {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+/* line 315, ../sass/_common.scss */
+.sidebar__widget_content_list_item:before {
+  float: left;
+  counter-increment: links;
+  content: "0" counter(links) ". ";
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 3px;
+}
+/* line 324, ../sass/_common.scss */
+.sidebar__widget_content_list_item_link {
+  color: #595959;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* line 331, ../sass/_common.scss */
+.sidebar__widget_content_list_item_link:hover {
+  color: #b10217;
+}
+
+/* line 341, ../sass/_common.scss */
+.product-block__headline {
+  color: #b10217;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+/* line 351, ../sass/_common.scss */
+.product-block__products {
+  margin-bottom: 30px;
+  margin-left: -30px;
+}
+/* line 354, ../sass/_common.scss */
+.product-block__products_item {
+  float: left;
+  width: 261px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+/* line 360, ../sass/_common.scss */
+.product-block__products_item:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 368, ../sass/_common.scss */
+.product-block__products_item_title {
+  background: #FFF;
+  padding: 15px;
+  text-align: center;
+}
+/* line 372, ../sass/_common.scss */
+.product-block__products_item_title_link {
+  color: #b10217;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* line 377, ../sass/_common.scss */
+.product-block__products_item_title_link:hover {
+  text-decoration: underline;
+}
+/* line 382, ../sass/_common.scss */
+.product-block__products_item_img {
+  width: 100%;
+  height: 240px;
+  padding: 20px;
+  background: #FFF;
+}
+/* line 387, ../sass/_common.scss */
+.product-block__products_item_img_link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background: #FFF;
+}
+/* line 394, ../sass/_common.scss */
+.product-block__products_item_img_link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 407, ../sass/_common.scss */
+.product-block__products_item_buyzone {
+  background: #B10217;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 411, ../sass/_common.scss */
+.product-block__products_item_buyzone_price {
+  padding: 18px 0 15px 15px;
+  display: block;
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  color: #FFF;
+}
+/* line 419, ../sass/_common.scss */
+.product-block__products_item_buyzone_price.old_price {
+  font-size: 15px;
+  text-decoration: line-through;
+  font-weight: normal;
+  padding-top: 22px;
+  padding-left: 10px;
+}
+/* line 427, ../sass/_common.scss */
+.product-block__products_item_buyzone_buy {
+  float: right;
+  padding: 13px 15px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+/* line 433, ../sass/_common.scss */
+.product-block__products_item_buyzone_buy:hover {
+  background: #333;
+}
+/* line 436, ../sass/_common.scss */
+.product-block__products_item_buyzone_buy .fa {
+  color: #fff;
+  font-size: 30px;
+}
+/* line 442, ../sass/_common.scss */
+.product-block__products_item_compare {
+  padding: 15px;
+  background: #595959;
+  text-align: center;
+}
+/* line 446, ../sass/_common.scss */
+.product-block__products_item_compare_link {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+/* line 448, ../sass/_common.scss */
+.product-block__products_item_compare_link .fa {
+  color: #FFF;
+  font-size: 20px;
+  margin-right: 3px;
+}
+/* line 454, ../sass/_common.scss */
+.product-block__products_item_compare_link_text {
+  font-size: 12px;
+  color: #FFF;
+}
+/* line 457, ../sass/_common.scss */
+.product-block__products_item_compare_link_text:hover {
+  text-decoration: underline;
 }
