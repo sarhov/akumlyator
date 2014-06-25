@@ -9,3 +9,4 @@ url: "/"
 # Build settings
 markdown: rdiscount
 permalink: pretty
+extensions: [fenced_code_blocks]
