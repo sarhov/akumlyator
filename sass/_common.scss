@@ -367,7 +367,12 @@ html {
 		}
 		&_item_title{
 			background: #FFF;
-			padding: 15px;
+			padding: 15px 5px 10px 5px;
+			height: 50px;
+			line-height: 1.2;
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			    text-overflow: ellipsis;
 			text-align: center;
 			&_link{
 				  color: #b10217;

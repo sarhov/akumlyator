@@ -488,28 +488,33 @@ html {
 /* line 368, ../sass/_common.scss */
 .product-block__products_item_title {
   background: #FFF;
-  padding: 15px;
+  padding: 15px 5px 10px 5px;
+  height: 50px;
+  line-height: 1.2;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
   text-align: center;
 }
-/* line 372, ../sass/_common.scss */
+/* line 377, ../sass/_common.scss */
 .product-block__products_item_title_link {
   color: #b10217;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
-/* line 377, ../sass/_common.scss */
+/* line 382, ../sass/_common.scss */
 .product-block__products_item_title_link:hover {
   text-decoration: underline;
 }
-/* line 382, ../sass/_common.scss */
+/* line 387, ../sass/_common.scss */
 .product-block__products_item_img {
   width: 100%;
   height: 240px;
   padding: 20px;
   background: #FFF;
 }
-/* line 387, ../sass/_common.scss */
+/* line 392, ../sass/_common.scss */
 .product-block__products_item_img_link {
   width: 100%;
   height: 100%;
@@ -517,7 +522,7 @@ html {
   position: relative;
   background: #FFF;
 }
-/* line 394, ../sass/_common.scss */
+/* line 399, ../sass/_common.scss */
 .product-block__products_item_img_link img {
   position: absolute;
   top: 0;
@@ -533,13 +538,13 @@ html {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 407, ../sass/_common.scss */
+/* line 412, ../sass/_common.scss */
 .product-block__products_item_buyzone {
   background: #B10217;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 411, ../sass/_common.scss */
+/* line 416, ../sass/_common.scss */
 .product-block__products_item_buyzone_price {
   padding: 18px 0 15px 15px;
   display: block;
@@ -549,7 +554,7 @@ html {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   color: #FFF;
 }
-/* line 419, ../sass/_common.scss */
+/* line 424, ../sass/_common.scss */
 .product-block__products_item_buyzone_price.old_price {
   font-size: 15px;
   text-decoration: line-through;
@@ -557,7 +562,7 @@ html {
   padding-top: 22px;
   padding-left: 10px;
 }
-/* line 427, ../sass/_common.scss */
+/* line 432, ../sass/_common.scss */
 .product-block__products_item_buyzone_buy {
   float: right;
   padding: 13px 15px;
@@ -565,37 +570,37 @@ html {
   background: none;
   border: none;
 }
-/* line 433, ../sass/_common.scss */
+/* line 438, ../sass/_common.scss */
 .product-block__products_item_buyzone_buy:hover {
   background: #333;
 }
-/* line 436, ../sass/_common.scss */
+/* line 441, ../sass/_common.scss */
 .product-block__products_item_buyzone_buy .fa {
   color: #fff;
   font-size: 30px;
 }
-/* line 442, ../sass/_common.scss */
+/* line 447, ../sass/_common.scss */
 .product-block__products_item_compare {
   padding: 15px;
   background: #595959;
   text-align: center;
 }
-/* line 446, ../sass/_common.scss */
+/* line 451, ../sass/_common.scss */
 .product-block__products_item_compare_link {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-/* line 448, ../sass/_common.scss */
+/* line 453, ../sass/_common.scss */
 .product-block__products_item_compare_link .fa {
   color: #FFF;
   font-size: 20px;
   margin-right: 3px;
 }
-/* line 454, ../sass/_common.scss */
+/* line 459, ../sass/_common.scss */
 .product-block__products_item_compare_link_text {
   font-size: 12px;
   color: #FFF;
 }
-/* line 457, ../sass/_common.scss */
+/* line 462, ../sass/_common.scss */
 .product-block__products_item_compare_link_text:hover {
   text-decoration: underline;
 }
