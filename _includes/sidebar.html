@@ -3,7 +3,7 @@
 			  <ul class="sidebar__menu__list">
 			  {% for i in (1..8) %}
 			    <li class="sidebar__menu__list_item {% if forloop.index == 5 %}  is-active {% endif %}">
-			      <a href="collection.html" class="sidebar__menu__list_item_link">
+			      <a href="{{site.baseurl}}/collection" class="sidebar__menu__list_item_link">
 			        название категории {{forloop.index}} 
 
 			      </a>
@@ -14,7 +14,7 @@
 			          <ul class="sidebar__menu__list__submenu js-sidebarMenu">
 			          {% for sub in (1..5) %}
 			            <li class="sidebar__menu__list__submenu_item">
-			              <a href="" class="sidebar__menu__list__submenu_item_link {% if forloop.index == 2 %}  is-active {% endif %}">
+			              <a href="{{site.baseurl}}/collection" class="sidebar__menu__list__submenu_item_link {% if forloop.index == 2 %}  is-active {% endif %}">
 			                подкатегория {{forloop.index}}
 			              </a>
 			            </li>
@@ -28,15 +28,16 @@
 			  </ul>
 			</div>
 			<!-- sidebar__menu -->
-
+			{% unless page.title == 'Каталог' %}
 			<div class="sidebar__brands sidebar__block">
 			{% for brand in  (1..8) %}
 			    <a href="#" class="sidebar__brands_link">
-			      <img src="img/banner-{{forloop.index}}.jpg" alt="">
+			      <img src="{{site.baseurl}}/img/banner-{{forloop.index}}.jpg" alt="">
 			    </a>
 			{% endfor %}
 			</div>
 			<!-- sidebar__brands -->
+			{% endunless %}
 			<div class="sidebar__widget sidebar__block">
 			  <h3 class="sidebar__widget_headline sidebar__block_headline">
 			    Название блока
