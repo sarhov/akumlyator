@@ -250,7 +250,8 @@
     </main>
     <!-- main-block -->
     <footer class="footer">
-      <div class="footer_block">
+      {% for block in (1..4) %}
+      <div class="footer__block">
         <h4 class="footer__block_headline">
           Название блока
         </h4>
@@ -263,7 +264,14 @@
           </nav>
         </div>
       </div>
+      <!-- footer__block -->
+      {% endfor %}
     </footer>
+    <div class="post-footer">
+      <div class="site-copy">
+       Сделано в Insales,  Название Магазина © 2014
+      </div>
+    </div>
 
   </section>
   <!-- main -->

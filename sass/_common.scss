@@ -466,3 +466,51 @@ html {
 		}
 	}
 }
+// product-block
+
+.footer{
+	@include inner;
+	@include clearfix;
+	padding: 40px 30px;
+	// margin-bottom: 50px;
+	background: #333;
+	&__block{
+		float: left;
+		width: 25%;
+		&_headline{
+			 color: #ffffff;
+		    font-size: 17px;
+		    line-height: normal;
+		    text-transform: uppercase;
+		    word-wrap: break-word;
+		    margin-bottom: 20px;
+		}
+		&_content_navigation_link{
+			display: block;
+			margin-bottom: 10px;
+			text-transform: capitalize;
+			color: #828181;
+			  font-size: 14px;
+    		font-weight: 600;
+    		word-wrap: break-word;
+    		&:hover, &.is-active{
+    			color: #B10217;
+    		}
+		}
+	}
+
+}
+
+// end footer
+
+.post-footer{
+	@include inner;
+}
+
+.site-copy{
+	  color: #ffffff;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 1230px;
+    padding: 25px 0;
+}

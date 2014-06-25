@@ -604,3 +604,58 @@ html {
 .product-block__products_item_compare_link_text:hover {
   text-decoration: underline;
 }
+
+/* line 471, ../sass/_common.scss */
+.footer {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 40px 30px;
+  background: #333;
+}
+/* line 477, ../sass/_common.scss */
+.footer__block {
+  float: left;
+  width: 25%;
+}
+/* line 480, ../sass/_common.scss */
+.footer__block_headline {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: normal;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+/* line 488, ../sass/_common.scss */
+.footer__block_content_navigation_link {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #828181;
+  font-size: 14px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+/* line 496, ../sass/_common.scss */
+.footer__block_content_navigation_link:hover, .footer__block_content_navigation_link.is-active {
+  color: #B10217;
+}
+
+/* line 506, ../sass/_common.scss */
+.post-footer {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/* line 510, ../sass/_common.scss */
+.site-copy {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 25px 0;
+}
