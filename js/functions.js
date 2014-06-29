@@ -73,9 +73,9 @@ $(document).ready(function() {
         $('.js-addedItem').html(title);
         $('.js-addedItem').attr('src', link);
         $('.js-itemAdded').fadeIn();
-        setTimeout(function() {
-            $('.js-itemAdded').fadeOut('fast');
-        }, 8000);
+        // setTimeout(function() {
+        //     $('.js-itemAdded').fadeOut('fast');
+        // }, 8000);
         $('.js-closeItemAdded').click(function() {
             $('.js-itemAdded').fadeOut();
         });
