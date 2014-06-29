@@ -19,32 +19,6 @@ html {
     background: url(../img/bg-1.png) 0 0 repeat-x, url(../img/bg.png) 0 0 repeat #1f1f1f;
 }
 
-@mixin inner {
-    width: 100%;
-    max-width: 1230px;
-    margin: 0 auto;
-}
-
-@mixin manualMedia($size){
-    @media screen and (max-width: $size) {
-        @content
-    }
-}
-
-
-@mixin no-style {
-    background: none;
-    border: none;
-}
-
-@mixin trs {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 .header {
     background: #333;
 }

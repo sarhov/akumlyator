@@ -1,0 +1,31 @@
+@mixin inner {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+@mixin manualMedia($size){
+    @media screen and (max-width: $size) {
+        @content
+    }
+}
+
+
+@mixin no-style {
+    background: none;
+    border: none;
+}
+
+@mixin trs {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+@mixin medium1230{
+    @media only screen and (max-width: 1230px){
+        @content 
+    }
+}
