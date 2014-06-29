@@ -41,7 +41,6 @@ $(document).ready(function() {
     });
 
     $('.js-addToCart').click(function() {
-        alert('yes')
         flyToCart($(this).parents().find('img'), $('.b-top__cart'));
     })
 
@@ -57,7 +56,7 @@ $(document).ready(function() {
             width: image.width(),
             height: image.height()
         };
-        $('#flyImg').animate(params, 'slow', false, function() {
+        $('#flyImg').animate(params, 800, false, function() {
             $('#flyImg').remove();
             fl = true;
         });
