@@ -151,6 +151,40 @@
           <span class="main__header_navigation_link_text">Корзина</span>
         </a>
       </nav>
+      <!-- desktop-navigation -->
+
+      <nav class="main__header_mobile-navigation ht">
+        <div class="main__header_mobile-navigation_headline js-mobileNavOpener">
+          Каталог
+          <i class="fa fa-angle-down"></i>
+        </div>
+        <ul class="main__header_mobile-navigation_list level-one">
+        {% for li in (1..8) %}
+           <li class="main__header_mobile-navigation_list_item">
+          <a href="product.html" class="main__header_mobile-navigation_list_item_link {% if forloop.index ==2 %} is-active {% endif %}">
+            Название категории
+          </a>
+          {% if forloop.index == 6 %}
+          <button class="main__header_mobile-navigation_list_item_arrow js-mobileNavOpener">
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <ul class="main__header_mobile-navigation_list level-two">
+          {% for subli in (1..6) %}
+            <li class="main__header_mobile-navigation_list_item">
+            <a href="" class="main__header_mobile-navigation_list_item_link">Подкатегория</a>
+            </li>
+            <!-- lebel two li -->
+            {% endfor %}
+          </ul>
+          <!-- level-two -->
+          {% endif %}
+          </li>
+          <!-- level one li -->
+        {% endfor %}
+
+        </ul>
+        <!-- lebel-one -->
+      </nav>
     </header>
     <!-- main__header -->
 

@@ -289,9 +289,70 @@ html {
     padding: 0 20px;
     background: #B10217;
     border-radius: 10px 10px 0 0;
-    @include manualMedia (1200px){
+    @include manualMedia (768px){
+        border-radius: 0;
+        background: none;
+        padding: 0;
         &_navigation{
             display: none;
+        }
+        &_mobile-navigation{
+            display: block;
+   
+            &_headline{
+                 background: #B10217;
+                 padding: 17px 20px;
+                 text-transform: uppercase;
+                 color: #fff;
+                 font-weight: bold;
+                 cursor: pointer;
+                 position: relative;
+                 .fa{
+                    float: right;
+                    font-size: 25px;
+                    position: absolute;
+                    top: 12px;
+                    right: 20px;
+                 }
+            }
+            &_list{
+                display: none;
+            }
+            &_list.level-one{
+                text-transform: uppercase;
+                color: #fff;
+            }
+            &_list.level-two a{
+                padding-left: 30px;
+                text-transform: none;
+            }
+            &_list_item:not(:last-child) a{
+                border-bottom: 1px solid #000;
+            }
+            &_list_item{
+                position: relative;
+                &_link{
+                    display: block;
+                    padding: 13px 20px;
+                    background:#323232;
+                    padding-right: 70px;
+                    position: relative;
+                    font-weight: 600;
+                 
+                } 
+                  &_arrow{
+                        position: absolute;
+                        right: 10px;
+                        top: 5px;
+                        @include no-style;
+                        color: #b10217;
+                        font-size: 23px;
+                        cursor: pointer;
+                    }
+            }
+            &_list_item_link.is-active, &_list_item:hover > a{
+                background:#4A4A4A;
+            }
         }
     }
 }
@@ -314,6 +375,9 @@ html {
     .fa {
         font-size: 27px;
         margin-right: 4px;
+        @include manualMedia (1000px){
+            display: none;
+        }
     }
 
 }

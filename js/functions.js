@@ -115,4 +115,12 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).find('.mini-cart').fadeToggle()
     });
+
+    // mobile-navigation
+
+    $('.js-mobileNavOpener').click(function() {
+        $(this).next('ul').slideToggle()
+        $(this).addClass('is-active');
+        $(this).find('.fa').toggleClass('fa-angle-down fa-angle-up');
+    });
 });
