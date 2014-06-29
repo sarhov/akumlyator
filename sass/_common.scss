@@ -13,6 +13,9 @@ a {
 
 html {
     font-family: 'Open Sans', sans-serif;
+    color: #7e7e7e;
+    font-size: 13px;
+    // line-height: 1.8;
     font-size: 14px;
     // for ie 8
     background: url(../img/bg.png) 0 0 repeat #1f1f1f;
@@ -109,7 +112,15 @@ html {
         margin-left: 30px;
         font-size: 18px;
     }
+
 }
+
+.desktop     .b-top__cart:hover{
+        > .mini-cart{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 
 .mini-cart{
     position: absolute;
@@ -121,6 +132,9 @@ html {
     box-shadow: 0 0 3px #333;
     padding: 25px;
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    @include trs;
     &__item{
         padding-bottom: 20px;
         @include clearfix;
@@ -223,6 +237,10 @@ html {
                 background:#B10217;
             }
         }
+    }
+    &__empty{
+        text-align: center;
+        padding: 10px;
     }
 }
 

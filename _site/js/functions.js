@@ -1,6 +1,35 @@
 $(document).ready(function() {
     console.log('I\'m ready!')
 
+    //detec mobile devices
+
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
+    if (isMobile.any()) {
+        $('body').addClass('mobile');
+    } else {
+        $('body').addClass('desktop')
+    }
+
 
     // slider
     jQuery(function() {
@@ -80,4 +109,10 @@ $(document).ready(function() {
             $('.js-itemAdded').fadeOut();
         });
     }
+
+    // mini-cart
+    $('.mobile .b-top__cart').click(function(e) {
+        e.preventDefault();
+        $(this).find('.mini-cart').fadeToggle()
+    });
 });
