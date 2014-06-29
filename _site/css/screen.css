@@ -298,7 +298,7 @@ html {
   overflow: hidden;
   *zoom: 1;
   margin-bottom: 20px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #ccc;
 }
 /* line 129, ../sass/_common.scss */
 .mini-cart__item_img_link {
