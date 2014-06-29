@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/_notifications.scss */
 .item-added {
   position: fixed;
-  padding: 20px 10px;
+  padding: 18px 10px 25px 10px;
   background: #323232;
   left: 0;
   top: 0;
@@ -78,46 +78,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   font-size: 13px;
   font-weight: bold;
+  display: none;
 }
-/* line 11, ../sass/_notifications.scss */
+/* line 12, ../sass/_notifications.scss */
 .item-added__text {
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
 }
-/* line 13, ../sass/_notifications.scss */
+/* line 14, ../sass/_notifications.scss */
 .item-added__text .fa {
   color: #b10217;
   font-size: 31px;
-  margin-right: 10px;
+  margin-right: 7px;
   position: relative;
   top: 2px;
 }
-/* line 21, ../sass/_notifications.scss */
+/* line 22, ../sass/_notifications.scss */
 .item-added span {
   color: #fff;
 }
-/* line 24, ../sass/_notifications.scss */
+/* line 25, ../sass/_notifications.scss */
 .item-added a {
   color: #b10217;
 }
-/* line 26, ../sass/_notifications.scss */
+/* line 27, ../sass/_notifications.scss */
 .item-added a:hover {
   text-decoration: underline;
 }
-/* line 30, ../sass/_notifications.scss */
+/* line 31, ../sass/_notifications.scss */
 .item-added__closer {
   position: absolute;
   top: 10px;
   right: 15px;
   cursor: pointer;
 }
-/* line 35, ../sass/_notifications.scss */
+/* line 36, ../sass/_notifications.scss */
 .item-added__closer .fa {
   font-size: 26px;
   color: #6d6d6d;
 }
-/* line 38, ../sass/_notifications.scss */
+/* line 39, ../sass/_notifications.scss */
 .item-added__closer .fa:hover {
   color: #b10217;
 }

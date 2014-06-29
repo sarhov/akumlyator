@@ -1,6 +1,6 @@
 .item-added {
     position: fixed;
-    padding: 20px 10px;
+    padding: 18px 10px 25px 10px;
     background: #323232;
     left: 0;
     top: 0;
@@ -8,12 +8,13 @@
     text-align: center;
     font-size: 13px;
     font-weight: bold;
+    display: none;
     &__text {
         @include inner;
         .fa {
             color: #b10217;
             font-size: 31px;
-            margin-right: 10px;
+            margin-right: 7px;
             position: relative;
             top: 2px;
         }
