@@ -387,10 +387,12 @@ html {
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     width: 250px;
-    height: 45px;
-    line-height: 45px;
+    height: 50px;
+    line-height: 50px;
     color: #fff;
         @include manualMedia(768px){
+            line-height: 45px;
+            height: 45px;
         width: 100%;
         padding-right: 50px;
          border-radius: 4px;
@@ -647,8 +649,9 @@ html {
     }
     &__menu {
         overflow: hidden;
-        border-radius: 5px;
         &__list {
+        border-radius: 5px;
+        overflow: hidden;
             &_item:not(:first-child) {
                 border-top: 1px solid #212121;
                 // border-bottom: 1px solid #212121;
