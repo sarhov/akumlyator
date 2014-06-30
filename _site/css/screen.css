@@ -1487,48 +1487,55 @@ body.swiped {
   height: 200px;
   width: 100%;
 }
-/* line 1105, ../sass/_common.scss */
+@media screen and (max-width: 575px) {
+  /* line 1096, ../sass/_common.scss */
+  .product-block__products.list .product-block__products_item_img {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* line 1109, ../sass/_common.scss */
 .product-block__products.list .product-block__products_item_buyzone {
   display: inline-block;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 1105, ../sass/_common.scss */
+  /* line 1109, ../sass/_common.scss */
   .product-block__products.list .product-block__products_item_buyzone {
     background: none;
   }
-  /* line 1112, ../sass/_common.scss */
+  /* line 1116, ../sass/_common.scss */
   .product-block__products.list .product-block__products_item_buyzone_price {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     color: #323232;
-    padding: 0;
+    padding: 5px 5px 5px 0;
   }
 }
-/* line 1118, ../sass/_common.scss */
+/* line 1122, ../sass/_common.scss */
 .product-block__products.list .product-block__products_item_buyzone_buy {
   display: none;
 }
-/* line 1125, ../sass/_common.scss */
+/* line 1129, ../sass/_common.scss */
 .product-block__products.list .product-block__products_item_compare {
   background: none;
   padding: 0;
   overflow: hidden;
   text-align: left;
 }
-/* line 1130, ../sass/_common.scss */
+/* line 1134, ../sass/_common.scss */
 .product-block__products.list .product-block__products_item_compare_link {
   margin-left: 10px;
   display: inline-block;
   margin-top: 8px;
 }
-/* line 1135, ../sass/_common.scss */
+/* line 1139, ../sass/_common.scss */
 .product-block__products.list .product-block__products_item_compare_link_text, .product-block__products.list .product-block__products_item_compare_link .fa {
   color: #323232;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   vertical-align: middle;
 }
-/* line 1141, ../sass/_common.scss */
+/* line 1145, ../sass/_common.scss */
 .product-block__products.list .product-block__products_item_buy_list {
   float: left;
   display: inline-block;
@@ -1546,7 +1553,7 @@ body.swiped {
   vertical-align: middle;
 }
 
-/* line 1160, ../sass/_common.scss */
+/* line 1164, ../sass/_common.scss */
 .footer {
   width: 100%;
   max-width: 1230px;
@@ -1557,17 +1564,17 @@ body.swiped {
   background: #333;
 }
 @media screen and (max-width: 769px) {
-  /* line 1160, ../sass/_common.scss */
+  /* line 1164, ../sass/_common.scss */
   .footer {
     display: none;
   }
 }
-/* line 1170, ../sass/_common.scss */
+/* line 1174, ../sass/_common.scss */
 .footer__block {
   float: left;
   width: 25%;
 }
-/* line 1173, ../sass/_common.scss */
+/* line 1177, ../sass/_common.scss */
 .footer__block_headline {
   color: #ffffff;
   font-size: 17px;
@@ -1577,7 +1584,7 @@ body.swiped {
   word-wrap: break-word;
   margin-bottom: 20px;
 }
-/* line 1182, ../sass/_common.scss */
+/* line 1186, ../sass/_common.scss */
 .footer__block_content_navigation_link {
   display: block;
   margin-bottom: 10px;
@@ -1587,19 +1594,19 @@ body.swiped {
   font-weight: 600;
   word-wrap: break-word;
 }
-/* line 1190, ../sass/_common.scss */
+/* line 1194, ../sass/_common.scss */
 .footer__block_content_navigation_link:hover, .footer__block_content_navigation_link.is-active {
   color: #B10217;
 }
 
-/* line 1199, ../sass/_common.scss */
+/* line 1203, ../sass/_common.scss */
 .post-footer {
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
 }
 @media screen and (max-width: 769px) {
-  /* line 1199, ../sass/_common.scss */
+  /* line 1203, ../sass/_common.scss */
   .post-footer {
     padding: 0 20px 0 20px;
     background: #F0F0F0;
@@ -1607,7 +1614,7 @@ body.swiped {
   }
 }
 
-/* line 1208, ../sass/_common.scss */
+/* line 1212, ../sass/_common.scss */
 .site-copy {
   color: #ffffff;
   font-size: 14px;
@@ -1616,7 +1623,7 @@ body.swiped {
   padding: 25px 0;
 }
 @media screen and (max-width: 769px) {
-  /* line 1208, ../sass/_common.scss */
+  /* line 1212, ../sass/_common.scss */
   .site-copy {
     padding: 20px 0;
     background: #333333;

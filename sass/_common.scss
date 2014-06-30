@@ -1101,6 +1101,10 @@ body.swiped {
                 overflow: hidden;
                 height: 200px;
                 width: 100%;
+                @include manualMedia(575px){
+                    width: 150px;
+                    height: 150px;
+                }
             }
             &_buyzone {
                 display: inline-block;
@@ -1112,7 +1116,7 @@ body.swiped {
                     &_price{
                       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
                       color: #323232;
-                      padding:    0;
+                      padding:5px 5px 5px 0;
                   }
                 }
                 &_buy {
