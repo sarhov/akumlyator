@@ -26,6 +26,14 @@ html {
     display: none;
 }
 
+a, a:visited, a:focus {
+    color: #323232;
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+}
+
+
 body.swiped{
     overflow: hidden;
 }
@@ -558,6 +566,32 @@ body.swiped{
     background: #F0F0F0;
     @include manualMedia(769px) {
         padding: 20px 20px 40px 20px;
+    }
+}
+
+.collection-top-panel{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sorting{
+    float: left;
+    &__block{
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+.compare-info{
+    float: left;
+}
+
+.layout-buttons{
+    float: right;
+    &_item{
+        @include no-style;
+        cursor: pointer;
     }
 }
 
