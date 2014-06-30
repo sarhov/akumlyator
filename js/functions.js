@@ -1,7 +1,7 @@
 $(document).ready(function() {
     console.log('I\'m ready!')
 
-    //detec mobile devices
+    //detect mobile devices
 
     var isMobile = {
         Android: function() {
@@ -113,11 +113,14 @@ $(document).ready(function() {
     // mini-cart
     $('.mobile .b-top__cart').click(function(e) {
         e.preventDefault();
-        $(this).find('.mini-cart').fadeToggle()
+        $(this).find('.mini-cart').fadeToggle().click(function(event) {
+            event.stopPropagation();
+        });
     });
 
-    // mobile-navigation
+    $('.mini-cart')
 
+    // mobile-navigation
     $('.js-mobileNavOpener').click(function() {
         $(this).next('ul').slideToggle()
         $(this).addClass('is-active');
