@@ -138,4 +138,20 @@ $(document).ready(function() {
         $(this).next('.sidebar__block_content').slideToggle();
         $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
     });
+
+    $('.js_opneMobileSidebarMenu').click(function() {
+        $('body').toggleClass('swiped');
+        $('.js-mobileMenu').fadeToggle('fast').click(function(event) {
+            event.stopPropagation();
+        });
+        $('body').append('<div class="mobile-op"></div>');
+        $('.mobile-op').click(function() {
+            $('body').toggleClass('swiped');
+            $('.js-mobileMenu').fadeToggle('fast');
+            $(this).remove()
+
+        });
+    });
+
+
 });

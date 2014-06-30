@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="{{ "/css/camera.css" | prepend: site.baseurl }}">
 </head>
 <body class="{% if page.url == '/' %} home {% else %} {{page.url | first }} {% endif %}">
+  <div class="mobile-menu js-mobileMenu ht">
+    <ul class="mobile-menu__list">
+    {% for menu in (1..20)  %}
+      <li class="mobile-menu__list_item">
+        <a href="#" class="mobile-menu__list_item_link {% if forloop.index == 2 %} is-active {% endif %}">
+        <i class="fa fa-caret-right"></i>
+        Название пунтка меню {{forloop.index}}
+      </a>
+      </li>
+    {% endfor %}
 
+    </ul>
+  </div>
   <header class="header">
     <div class="header__buttons ht">
       <button class=".header__buttons_menu js_opneMobileSidebarMenu header__buttons_item">
