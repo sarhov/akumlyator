@@ -576,6 +576,9 @@ body.swiped {
     &__block {
         float: left;
         margin-right: 10px;
+        @include manualMedia(575px){
+            margin-bottom: 10px;
+        }
         &_title {
             color: #323232;
             padding-right: 7px;
@@ -592,6 +595,9 @@ body.swiped {
 
 .compare-info {
     float: left;
+    @include manualMedia(575px){
+        float: right;
+    }
     &__link {
         margin-top: 6px;
         display: block;
@@ -601,6 +607,12 @@ body.swiped {
 
 .layout-buttons {
     float: right;
+    @include manualMedia(1000px){
+        float: none;
+        margin: 10px 0 0px 0;
+        width: 200px;   
+        clear: left;
+    }
     &_item {
         @include no-style;
         padding: 0;
@@ -1066,10 +1078,20 @@ body.swiped {
                 overflow: hidden;
                 line-height: 1.4;
                 margin-bottom: 10px;
+                @include manualMedia(550px){
+                    display: none;
+                }
             }
             &_title {
                 background: none;
                 text-align: left;
+                padding-top: 0;
+                &_link{
+                    text-decoration: underline;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
             }
             &_img {
                 float: left;
@@ -1083,12 +1105,27 @@ body.swiped {
             &_buyzone {
                 display: inline-block;
                 padding-right: 10px;
+                margin-bottom: 10px;
+                @include manualMedia(768px){
+                    background: none;
+
+                    &_price{
+                      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+                      color: #323232;
+                      padding:    0;
+                  }
+                }
                 &_buy {
                     display: none;
                 }
+                // &_price{
+                //     padding: 15px;
+                // }
             }
             &_compare {
                 background: none;
+                padding: 0;
+                overflow: hidden;
                 text-align: left;
                 &_link {
                     margin-left: 10px;
