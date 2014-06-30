@@ -131,4 +131,11 @@ $(document).ready(function() {
     $('.js_openMoblieSearch').click(function() {
         $('.b-top__search').slideToggle();
     });
+
+    // opene sidebar blocks mobile
+
+    $('.js_openSidebarBlockMobile').click(function(event) {
+        $(this).next('.sidebar__block_content').slideToggle();
+        $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+    });
 });

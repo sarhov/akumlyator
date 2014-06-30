@@ -579,6 +579,9 @@ html {
             display: none !important;
         }
     }
+    @include manualMedia(400px){
+        display: none;
+    }
 }
 
 .camera_caption_link{
@@ -595,8 +598,17 @@ html {
     @include manualMedia(1200px){
         width: 30%;
     }
+    @include manualMedia(679px){
+        width: 100%;
+    }
     &__block {
         margin-bottom: 20px;
+        @include clearfix;
+        &_content{
+            @include manualMedia(678px){
+                display: none;
+            }
+        }
         &_headline {
             color: #b10217;
             font-size: 23px;
@@ -604,6 +616,24 @@ html {
             line-height: 30px;
             text-transform: uppercase;
             margin-bottom: 20px;
+            @include manualMedia(678px){
+                cursor: pointer;
+            }
+            &_opener{
+                @include no-style;
+                float: right;
+                font-size: 23px;
+                color: #7e7e7e;
+                cursor: pointer;
+            }
+            @include manualMedia(678px){
+                &.ht{
+                    display: block;
+                }
+                &_opener{
+                    display: block;
+                }
+            }
         }
     }
     &__menu {
@@ -659,6 +689,11 @@ html {
         }
     }
     // end sidebar__menu
+    &__brands{
+               @include manualMedia(678px){
+            display: none;
+        }
+    }
     &__brands_link {
         position: relative;
         margin-bottom: 10px;
@@ -667,6 +702,7 @@ html {
         overflow: hidden;
         border-radius: 5px;
         display: block;
+ 
         &:hover {
             @include trs;
             opacity: 0.7;
@@ -730,7 +766,7 @@ html {
     &__products {
         margin-bottom: 30px;
         margin-left: -3%;
-        @include manualMedia (769px){
+        @include manualMedia (550px){
             margin-left: 0;
         }
         &_item {
@@ -739,15 +775,26 @@ html {
             border-radius: 5px;
             overflow: hidden;
             margin-left: 3%;
-            @include manualMedia (1200px){
+            @include manualMedia (1000px){
                 width: 47%;
                 margin-bottom: 30px;
+                &:last-child{
+                    width: 97%%;
+                }
             }
 
             @include manualMedia(769px){
-                width: 100%;
+                width: 47%;
                 margin-bottom: 30px;
+                &:last-child{
+                    width: 97%;
+                }
+            }
+
+            @include manualMedia(550px){
+                width: 100%;
                 margin-left: 0;
+
             }
             &:hover img {
                 -webkit-transform: scale(1.1);
@@ -870,6 +917,9 @@ html {
     padding: 40px 30px;
     // margin-bottom: 50px;
     background: #333;
+    @include manualMedia(678px){
+        display: none;
+    }
     &__block {
         float: left;
         width: 25%;
@@ -901,6 +951,11 @@ html {
 
 .post-footer {
     @include inner;
+    @include manualMedia(678px){
+        padding: 0 30px 0 30px;
+        background:#F0F0F0;
+        text-align: center;
+    }
 }
 
 .site-copy {
@@ -909,4 +964,9 @@ html {
     margin: 0 auto;
     max-width: 1230px;
     padding: 25px 0;
+    @include manualMedia(678px){
+        padding: 20px 0;
+        background: #333333;
+        text-align: center;
+    }
 }
