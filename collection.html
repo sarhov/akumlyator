@@ -73,41 +73,11 @@ title: Каталог
 		</div>
 		<!-- collection-top-panel -->
 
-        <section class="product-block">
+        <section class="product-block collection">
           <h3 class="product-block__headline">Название блока</h3>
           <div class="product-block__products clearfix grid">
-            {% for product in (1..3) %}
-            <article class="product-block__products_item">
-              <h1 class="product-block__products_item_title">
-              <a href="#" class="product-block__products_item_title_link">
-                Название продукта {{forloop.index}}
-              </a>
-              </h1>
-              <!-- product-block__products_item -->
-              <figure class="product-block__products_item_img">
-              <a href="" class="product-block__products_item_img_link">
-                <img src="{{site.baseurl}}/img/product-img-{{forloop.index}}.png" alt="">
-              </a>
-              </figure>
-              <!-- product-block__products_item_img -->
-              <div class="product-block__products_item_buyzone">
-                <span class="product-block__products_item_buyzone_price">4578 Руб</span>
-                <span class="product-block__products_item_buyzone_price old_price">5578 Руб</span>
-                <button class="product-block__products_item_buyzone_buy js-addToCart">
-                  <i class="fa fa-shopping-cart"></i>
-                </button>
-              </div>
-              <!-- product-block__products_item_buyzone -->
-              <div class="product-block__products_item_compare">
-                <a href="#" class="product-block__products_item_compare_link">
-                  <i class="fa fa-bar-chart-o"></i>
-                  <span class="product-block__products_item_compare_link_text js-compareText">
-                    Сравнить
-                  </span>
-                </a>
-              </div>
-            </article>
-            <!-- products-block__products_item -->
+            {% for product in (1..6) %}
+              {% include product-block.html %}
             {% endfor %}
           </div>
         </section>
