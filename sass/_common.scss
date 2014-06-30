@@ -111,7 +111,7 @@ body.swiped{
             }
             .fa{
                 color: #7e7e7e;
-                font-size: 26px;
+                font-size: 30px;
                 margin-right: 5px;
                 vertical-align: middle;
             }
@@ -556,7 +556,7 @@ body.swiped{
     @include inner;
     padding: 30px 30px 50px 30px;
     background: #F0F0F0;
-    @include manualMedia(679px) {
+    @include manualMedia(769px) {
         padding: 20px 20px 40px 20px;
     }
 }
@@ -571,7 +571,7 @@ body.swiped{
 
     // height: 400px;
     // background: #444;
-    @include manualMedia(679px) {
+    @include manualMedia(769px) {
         width: 100%;
         padding-left: 0;
     }
@@ -654,21 +654,21 @@ body.swiped{
         width: 30%;
     }
 
-    @include manualMedia(679px) {
+    @include manualMedia(769px) {
         width: 100%;
     }
 
     &__block {
         margin-bottom: 20px;
         @include clearfix;
-        @include manualMedia(679px) {
+        @include manualMedia(769px) {
             &:last-child {
                 margin-bottom: 0;
             }
         }
 
         &_content {
-            @include manualMedia(679px) {
+            @include manualMedia(769px) {
                 display: none;
             }
         }
@@ -679,7 +679,7 @@ body.swiped{
             line-height: 30px;
             text-transform: uppercase;
             margin-bottom: 20px;
-            @include manualMedia(679px) {
+            @include manualMedia(769px) {
                 cursor: pointer;
             }
 
@@ -690,7 +690,7 @@ body.swiped{
                 color: #7e7e7e;
                 cursor: pointer;
             }
-            @include manualMedia(679px) {
+            @include manualMedia(769px) {
                 &.ht {
                     display: block;
                 }
@@ -755,7 +755,7 @@ body.swiped{
     }
     // end sidebar__menu
     &__brands {
-        @include manualMedia(679px) {
+        @include manualMedia(769px) {
             display: none;
         }
     }
@@ -849,10 +849,18 @@ body.swiped{
             }
 
             @include manualMedia(769px) {
+                width: 30%;
+                margin-bottom: 30px;
+                &:last-child {
+                    width: 30%;
+                }
+            }
+
+            @include manualMedia(620px) {
                 width: 47%;
                 margin-bottom: 30px;
                 &:last-child {
-                    width: 97%;
+                    width: 100%;
                 }
             }
 
@@ -985,7 +993,7 @@ body.swiped{
     padding: 40px 30px;
     // margin-bottom: 50px;
     background: #333;
-    @include manualMedia(679px) {
+    @include manualMedia(769px) {
         display: none;
     }
 
@@ -1020,7 +1028,7 @@ body.swiped{
 
 .post-footer {
     @include inner;
-    @include manualMedia(679px) {
+    @include manualMedia(769px) {
         padding: 0 20px 0 20px;
         background: #F0F0F0;
         text-align: center;
@@ -1033,7 +1041,7 @@ body.swiped{
     margin: 0 auto;
     max-width: 1230px;
     padding: 25px 0;
-    @include manualMedia(679px) {
+    @include manualMedia(769px) {
         padding: 20px 0;
         background: #333333;
         text-align: center;

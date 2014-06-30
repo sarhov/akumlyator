@@ -132,25 +132,31 @@ $(document).ready(function() {
         $('.b-top__search').slideToggle();
     });
 
-    // opene sidebar blocks mobile
+    // open sidebar blocks mobile
 
     $('.mobile .js_openSidebarBlockMobile').click(function(event) {
         $(this).next('.sidebar__block_content').slideToggle();
         $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
     });
 
+    // open mobile menu
     $('.js_opneMobileSidebarMenu').click(function() {
         $('body').toggleClass('swiped');
         $('.js-mobileMenu').fadeToggle('fast').click(function(event) {
             event.stopPropagation();
-        });
-        $('body').append('<div class="mobile-op"></div>');
-        $('.mobile-op').click(function() {
-            $('body').toggleClass('swiped');
-            $('.js-mobileMenu').fadeToggle('fast');
-            $(this).remove()
 
         });
+        if ($('body').hasClass('swiped')) {
+            $('body').append('<div class="mobile-op"></div>');
+            $('.mobile-op').click(function() {
+                $('body').removeClass('swiped');
+                $('.js-mobileMenu').fadeToggle('fast');
+                $(this).remove()
+
+            });
+        } else {
+            $('.mobile-op').remove()
+        }
     });
 
 
