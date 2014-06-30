@@ -27,7 +27,7 @@ $(document).ready(function() {
     if (isMobile.any()) {
         $('body').addClass('mobile');
     } else {
-        $('body').addClass('desktop')
+        $('body').addClass('desktop');
     }
 
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
 
     // opene sidebar blocks mobile
 
-    $('.js_openSidebarBlockMobile').click(function(event) {
+    $('.mobile .js_openSidebarBlockMobile').click(function(event) {
         $(this).next('.sidebar__block_content').slideToggle();
         $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
     });
