@@ -818,6 +818,10 @@ body.swiped{
 
 // sidebar end
 
+.desktop .sidebar__block:hover > .sidebar__block_content{
+    display: block;
+}
+
 .product-block {
     &__headline {
         color: #b10217;
