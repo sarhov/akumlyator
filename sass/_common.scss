@@ -580,11 +580,26 @@ body.swiped{
     &__block{
         float: left;
         margin-right: 10px;
+        &_title{
+             color: #323232;
+        padding-right: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+        }
+        &_select{
+            background:#fff;
+            border: 1px solid #ccc; 
+            padding: 4px 5px;
+        }
     }
 }
 
 .compare-info{
     float: left;
+    &__link{
+        margin-top: 6px;
+        display: block;
+    }
 }
 
 .layout-buttons{
