@@ -126,4 +126,9 @@ $(document).ready(function() {
         $(this).addClass('is-active');
         $(this).find('.fa').toggleClass('fa-angle-down fa-angle-up');
     });
+
+    // open search in mobile 
+    $('.js_openMoblieSearch').click(function() {
+        $('.b-top__search').slideToggle();
+    });
 });
