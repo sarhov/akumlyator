@@ -159,5 +159,27 @@ $(document).ready(function() {
         }
     });
 
+    // grid list
+
+    $('.js-toList').click(function() {
+        $('.product-block__products').addClass('list').removeClass('grid')
+        $.totalStorage('layout', 'list');
+        $(this).addClass('is-active').siblings('button').removeClass('is-active')
+    });
+
+    $('.js-toGrid').click(function() {
+        $('.product-block__products').addClass('grid').removeClass('list')
+        $.totalStorage('layout', 'grid');
+        $(this).addClass('is-active').siblings('button').removeClass('is-active')
+    });
+
+    if ($.totalStorage('layout') == 'list') {
+        $('.product-block__products').addClass('list').removeClass('grid')
+        $('.js-toList').addClass('is-active').siblings('button').removeClass('is-active')
+    } else {
+        $('.product-block__products').addClass('grid').removeClass('list');
+        $('.js-toGrid').addClass('is-active').siblings('button').removeClass('is-active')
+    }
+
 
 });

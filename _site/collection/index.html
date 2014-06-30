@@ -526,7 +526,7 @@
         </div>
         <!-- sorting-variant -->
 
-        <div class="sorting__pages sorting__block">
+        <div class="sorting__pages sorting__block ">
           <span class="sorting__block_title">На странице: </span>
           <select name="" id="" class="sorting__block_select">
               <option value="12">12</option>
@@ -546,10 +546,10 @@
       </div>
       <!-- compare-info -->
       <div class="layout-buttons">
-        <button class="layout-buttons_item layout-buttons_list js-toList">
+        <button class="layout-buttons_item layout-buttons_list js-toList" data-layout="list">
           <i class="fa fa-list"></i>
         </button>
-        <button class="layout-buttons_item layout-buttons_grid layout js-toGrid">
+        <button class="layout-buttons_item layout-buttons_grid layout js-toGrid is-active" data-layout="grid">
           <i class="fa fa-th"></i>
         </button>
       </div>
@@ -559,7 +559,7 @@
 
         <section class="product-block">
           <h3 class="product-block__headline">Название блока</h3>
-          <div class="product-block__products clearfix">
+          <div class="product-block__products clearfix grid">
             
             <article class="product-block__products_item">
               <h1 class="product-block__products_item_title">
@@ -973,6 +973,7 @@
   <script src="/js/camera.min.js"></script>
 
   <script src="/js/functions.js"></script>
+  <script src="/js/jquery.total-storage.min.js"></script>
 
 <div class="item-added js-itemAdded">
   <div class="item-added__text">

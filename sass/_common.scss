@@ -606,8 +606,16 @@ body.swiped{
     float: right;
     &_item{
         @include no-style;
+        padding: 0;
         cursor: pointer;
-    }
+        .fa{
+            font-size: 28px;
+            color: #000;
+        }
+   
+    }  &_item.is-active .fa,  &_item:hover .fa{
+        color: #b10217;
+    }   
 }
 
 .content {
