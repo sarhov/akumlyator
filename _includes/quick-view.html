@@ -1,26 +1,26 @@
-  <button class="product-block__products_item_qview qview{{forloop.index}}_{{include.type}}" rel="colorbox">
-  <i class="fa fa-search"></i>
+<button class="product-block__products_item_qview qview{{forloop.index}}_{{include.type}}" rel="colorbox">
+    <i class="fa fa-search"></i>
 </button>
 
-  <script>
-    $(document).ready(function(){
-  $("button.qview{{forloop.index}}_{{include.type}}").colorbox({
-  rel: 'colorbox_{{include.type}}',
-  inline:true,
-  html: true,
-  width:'58%',
-  maxWidth:'780px',
-  height:'70%',
-  opacity:0.6,
-  open:false,
-  returnFocus:false,
-  fixed: false,
-  title: false,
-  href:'.quick-view{{forloop.index}}_{{include.type}}',
-  current:'Товар {current} из {total}'
-  });
-  }); 
-   </script> 
+<script>
+$(document).ready(function() {
+    $("button.qview{{forloop.index}}_{{include.type}}").colorbox({
+        rel: 'colorbox_{{include.type}}',
+        inline: true,
+        html: true,
+        width: '58%',
+        maxWidth: '780px',
+        height: '70%',
+        opacity: 0.6,
+        open: false,
+        returnFocus: false,
+        fixed: false,
+        title: false,
+        href: '.quick-view{{forloop.index}}_{{include.type}}',
+        current: 'Товар {current} из {total}'
+    });
+});
+</script>
 
 
 <div class="ht">

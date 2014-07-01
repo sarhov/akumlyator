@@ -1,8 +1,8 @@
 $(document).ready(function() {
+
     console.log('I\'m ready!')
 
     //detect mobile devices
-
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -29,7 +29,6 @@ $(document).ready(function() {
     } else {
         $('body').addClass('desktop');
     }
-
 
     // slider
     jQuery(function() {
@@ -95,8 +94,6 @@ $(document).ready(function() {
         });
     }
 
-
-
     // item added
     function itemAdedd(title, link) {
         $('.js-addedItem').html(title);
@@ -133,8 +130,6 @@ $(document).ready(function() {
     });
 
     // open sidebar blocks mobile
-
-
     if ($(window).width() < 769) {
         $('.js_openSidebarBlockMobile').click(function(event) {
             $(this).next('.sidebar__block_content').slideToggle();
@@ -164,7 +159,6 @@ $(document).ready(function() {
     });
 
     // grid list
-
     $('.js-toList').click(function() {
         $('.product-block__products').addClass('list').removeClass('grid')
         $.totalStorage('layout', 'list');
@@ -185,7 +179,6 @@ $(document).ready(function() {
         $('.js-toGrid').addClass('is-active').siblings('button').removeClass('is-active')
     }
 
-    $('.home .product-block__products ').removeClass('list').addClass('grid')
-
+    $('.home .product-block__products ').removeClass('list').addClass('grid');
 
 });
