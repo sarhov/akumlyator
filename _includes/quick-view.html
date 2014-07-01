@@ -16,7 +16,7 @@
   returnFocus:false,
   fixed: false,
   title: false,
-  href:'.quick-view{{forloop.index}}',
+  href:'.quick-view{{forloop.index}}_{{include.type}}',
   current:'Товар {current} из {total}'
   });
   }); 
@@ -24,7 +24,7 @@
 
 
 <div class="ht">
-    <div class="quick-view{{forloop.index}}">
+    <div class="quick-view{{forloop.index}}_{{include.type}}">
         text {{forloop.index}}
     </div>
 </div>

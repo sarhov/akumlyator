@@ -185,5 +185,7 @@ $(document).ready(function() {
         $('.js-toGrid').addClass('is-active').siblings('button').removeClass('is-active')
     }
 
+    $('.home .product-block__products ').removeClass('list').addClass('grid')
+
 
 });
