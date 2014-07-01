@@ -1592,7 +1592,29 @@ body.swiped {
   vertical-align: middle;
 }
 
-/* line 1196, ../sass/_common.scss */
+/* line 1194, ../sass/_common.scss */
+.pagination {
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 1197, ../sass/_common.scss */
+.pagination__item {
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  margin-right: 5px;
+  text-align: center;
+  color: #323232;
+}
+/* line 1206, ../sass/_common.scss */
+.pagination__item.is-active, .pagination__item:hover {
+  border: 1px solid #444;
+}
+
+/* line 1214, ../sass/_common.scss */
 .footer {
   width: 100%;
   max-width: 1230px;
@@ -1603,17 +1625,17 @@ body.swiped {
   background: #333;
 }
 @media screen and (max-width: 769px) {
-  /* line 1196, ../sass/_common.scss */
+  /* line 1214, ../sass/_common.scss */
   .footer {
     display: none;
   }
 }
-/* line 1206, ../sass/_common.scss */
+/* line 1224, ../sass/_common.scss */
 .footer__block {
   float: left;
   width: 25%;
 }
-/* line 1209, ../sass/_common.scss */
+/* line 1227, ../sass/_common.scss */
 .footer__block_headline {
   color: #ffffff;
   font-size: 17px;
@@ -1623,7 +1645,7 @@ body.swiped {
   word-wrap: break-word;
   margin-bottom: 20px;
 }
-/* line 1218, ../sass/_common.scss */
+/* line 1236, ../sass/_common.scss */
 .footer__block_content_navigation_link {
   display: block;
   margin-bottom: 10px;
@@ -1633,19 +1655,19 @@ body.swiped {
   font-weight: 600;
   word-wrap: break-word;
 }
-/* line 1226, ../sass/_common.scss */
+/* line 1244, ../sass/_common.scss */
 .footer__block_content_navigation_link:hover, .footer__block_content_navigation_link.is-active {
   color: #B10217;
 }
 
-/* line 1235, ../sass/_common.scss */
+/* line 1253, ../sass/_common.scss */
 .post-footer {
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
 }
 @media screen and (max-width: 769px) {
-  /* line 1235, ../sass/_common.scss */
+  /* line 1253, ../sass/_common.scss */
   .post-footer {
     padding: 0 20px 0 20px;
     background: #F0F0F0;
@@ -1653,7 +1675,7 @@ body.swiped {
   }
 }
 
-/* line 1244, ../sass/_common.scss */
+/* line 1262, ../sass/_common.scss */
 .site-copy {
   color: #ffffff;
   font-size: 14px;
@@ -1662,7 +1684,7 @@ body.swiped {
   padding: 25px 0;
 }
 @media screen and (max-width: 769px) {
-  /* line 1244, ../sass/_common.scss */
+  /* line 1262, ../sass/_common.scss */
   .site-copy {
     padding: 20px 0;
     background: #333333;
