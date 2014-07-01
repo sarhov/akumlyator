@@ -1220,11 +1220,6 @@ body.swiped {
   color: #b10217;
 }
 
-/* line 894, ../sass/_common.scss */
-.desktop .sidebar__block:hover > .sidebar__block_content {
-  display: block;
-}
-
 /* line 899, ../sass/_common.scss */
 .product-block__headline {
   color: #b10217;

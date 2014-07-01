@@ -134,10 +134,14 @@ $(document).ready(function() {
 
     // open sidebar blocks mobile
 
-    $('.mobile .js_openSidebarBlockMobile').click(function(event) {
-        $(this).next('.sidebar__block_content').slideToggle();
-        $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
-    });
+
+    if ($(window).width() < 769) {
+        $('.js_openSidebarBlockMobile').click(function(event) {
+            $(this).next('.sidebar__block_content').slideToggle();
+            $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+        });
+
+    };
 
     // open mobile menu
     $('.js_opneMobileSidebarMenu').click(function() {
