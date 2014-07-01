@@ -11,8 +11,8 @@ a {
     color: #f0f0f0;
 }
 
-#colorbox button{
-     border: medium none;
+#colorbox button {
+    border: medium none;
     margin: 0;
     outline: medium none;
 }
@@ -582,9 +582,10 @@ body.swiped {
     &__block {
         float: left;
         margin-right: 10px;
-        @include manualMedia(575px){
+        @include manualMedia(575px) {
             margin-bottom: 10px;
         }
+
         &_title {
             color: #323232;
             padding-right: 7px;
@@ -601,9 +602,10 @@ body.swiped {
 
 .compare-info {
     float: left;
-    @include manualMedia(575px){
+    @include manualMedia(575px) {
         float: right;
     }
+
     &__link {
         margin-top: 6px;
         display: block;
@@ -613,12 +615,13 @@ body.swiped {
 
 .layout-buttons {
     float: right;
-    @include manualMedia(1000px){
+    @include manualMedia(1000px) {
         float: none;
         margin: 10px 0 0px 0;
-        width: 200px;   
+        width: 200px;
         clear: left;
     }
+
     &_item {
         @include no-style;
         padding: 0;
@@ -862,6 +865,83 @@ body.swiped {
         &_content_list {
             counter-reset: links 0;
         }
+        &_content {
+            &_links{
+                &_item{
+                      color: #b10217;
+                      display: block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    &:hover, &.is-active{
+        color: #444544;
+    }
+    .fa{
+         color: #ccc;
+    font-size: 21px;
+    margin-right: 10px;
+    vertical-align: middle;
+    }
+                }
+            }
+            &_item {
+                margin-bottom: 30px;
+                @include clearfix;
+                max-width: 250px;
+                &_img-link {
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    border-radius: 3px;
+                    background: #fff;
+                    float: left;
+                    margin-right: 10px;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                &_info {
+                    overflow: hidden;
+                    &_link {
+                        display: block;
+                        color: #b10217;
+                        font-size: 14px;
+                        text-decoration: underline;
+                        font-weight: 600;
+                        line-height: 1.4;
+                        margin-bottom: 15px;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    &_price {
+                        color: #333;
+                        display: block;
+                        font-size: 22px;
+                        font-weight: bold;
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+                        margin-bottom: 5px;
+                    }
+                    &_old-price {
+                        font-size: 18px;
+                        font-weight: normal;
+                        line-height: 16px;
+                        text-decoration: line-through;
+                        color: #333;
+                    }
+                }
+            }
+        }
         &_content_list_item {
             overflow: hidden;
             margin-bottom: 15px;
@@ -918,7 +998,7 @@ body.swiped {
             border-radius: 5px;
             overflow: hidden;
             margin-left: 3%;
-            &_qview{
+            &_qview {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -927,49 +1007,47 @@ body.swiped {
                 background-color: #93222B;
                 padding: 2px;
                 cursor: pointer;
-                .fa{
+                .fa {
                     font-size: 23px;
                     color: #fff;
                 }
-                &:hover{
-                    background:#7E7E7E;
+                &:hover {
+                    background: #7E7E7E;
                 }
             }
-            &:hover  &_qview{
-               
-                    display: block;
-                
+            &:hover &_qview {
+                display: block;
             }
             @include manualMedia(1000px) {
                 width: 47%;
                 margin-bottom: 30px;
-                &:last-child {
-                    width: 97%;
-                }
+                // &:last-child {
+                //     width: 97%;
+                // }
             }
 
             @include manualMedia(769px) {
                 width: 30%;
                 margin-bottom: 30px;
-                &:last-child {
-                    width: 30%;
-                }
+                // &:last-child {
+                //     width: 30%;
+                // }
             }
 
             @include manualMedia(620px) {
                 width: 47%;
                 margin-bottom: 30px;
-                &:last-child {
-                    width: 100%;
-                }
+                // &:last-child {
+                //     width: 100%;
+                // }
             }
 
             @include manualMedia(550px) {
                 width: 100%;
                 margin-left: 0;
-                &:last-child {
-                    width: 100%;
-                }
+                // &:last-child {
+                //     width: 100%;
+                // }
             }
 
             &:hover img {
@@ -1099,10 +1177,10 @@ body.swiped {
             padding-bottom: 30px;
             border-radius: 0;
             margin-left: 0;
-            &_qview{
+            &_qview {
                 display: none;
             }
-            &:not(:last-child){
+            &:not(:last-child) {
                 border-bottom: 1px solid #ccc;
             }
             &_description {
@@ -1110,7 +1188,7 @@ body.swiped {
                 overflow: hidden;
                 line-height: 1.4;
                 margin-bottom: 10px;
-                @include manualMedia(550px){
+                @include manualMedia(550px) {
                     display: none;
                 }
             }
@@ -1118,9 +1196,9 @@ body.swiped {
                 background: none;
                 text-align: left;
                 padding-top: 0;
-                &_link{
+                &_link {
                     text-decoration: underline;
-                    &:hover{
+                    &:hover {
                         text-decoration: none;
                     }
                 }
@@ -1133,7 +1211,7 @@ body.swiped {
                 overflow: hidden;
                 height: 200px;
                 width: 100%;
-                @include manualMedia(575px){
+                @include manualMedia(575px) {
                     width: 150px;
                     height: 150px;
                 }
@@ -1142,21 +1220,22 @@ body.swiped {
                 display: inline-block;
                 padding-right: 10px;
                 margin-bottom: 10px;
-                @include manualMedia(768px){
+                @include manualMedia(768px) {
                     background: none;
-
-                    &_price{
-                      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-                      color: #323232;
-                      padding:5px 5px 5px 0;
-                  }
+                    &_price {
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+                        color: #323232;
+                        padding: 5px 5px 5px 0;
+                    }
                 }
+
                 &_buy {
                     display: none;
                 }
                 // &_price{
                 //     padding: 15px;
                 // }
+           
             }
             &_compare {
                 background: none;
@@ -1191,10 +1270,11 @@ body.swiped {
     }
 }
 
-.pagination{
+.pagination {
     clear: both;
     @include clearfix;
-    &__item{
+    margin-bottom: 20px;
+    &__item {
         border: 1px solid #ccc;
         width: 30px;
         height: 30px;
@@ -1203,7 +1283,7 @@ body.swiped {
         margin-right: 5px;
         text-align: center;
         color: #323232;
-        &.is-active, &:hover{
+        &.is-active, &:hover {
             border: 1px solid #444;
         }
     }

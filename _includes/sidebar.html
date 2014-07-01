@@ -1,92 +1,128 @@
-    <aside class="sidebar">
-			<div class="sidebar__menu sidebar__block">
-			<h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile ht">
-			    Название блока
-			    <button class="sidebar__block_headline_opener  ht">
-			   	 <i class="fa fa-plus-circle"></i>
-			    </button>
-			  </h3>
-			  <ul class="sidebar__menu__list sidebar__block_content">
-			  {% for i in (1..8) %}
-			    <li class="sidebar__menu__list_item {% if forloop.index == 5 %}  is-active {% endif %}">
-			      <a href="{{site.baseurl}}/collection" class="sidebar__menu__list_item_link">
+<aside class="sidebar">
+    <div class="sidebar__menu sidebar__block">
+        <h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile ht">
+            Название блока
+            <button class="sidebar__block_headline_opener  ht">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </h3>
+        <ul class="sidebar__menu__list sidebar__block_content">
+            {% for i in (1..8) %}
+            <li class="sidebar__menu__list_item {% if forloop.index == 5 %}  is-active {% endif %}">
+                <a href="{{site.baseurl}}/collection" class="sidebar__menu__list_item_link">
 			        название категории {{forloop.index}} 
 
 			      </a>
-			         {% if forloop.index  == 2 %}
-			       <i class="fa js-openSubMenu fa-chevron-circle-down"></i>
-			      {% endif %}
-			      {% if forloop.index == 2 %}
-			          <ul class="sidebar__menu__list__submenu js-sidebarMenu">
-			          {% for sub in (1..5) %}
-			            <li class="sidebar__menu__list__submenu_item">
-			              <a href="{{site.baseurl}}/collection" class="sidebar__menu__list__submenu_item_link {% if forloop.index == 2 %}  is-active {% endif %}">
+                {% if forloop.index == 2 %}
+                <i class="fa js-openSubMenu fa-chevron-circle-down"></i>
+                {% endif %} {% if forloop.index == 2 %}
+                <ul class="sidebar__menu__list__submenu js-sidebarMenu">
+                    {% for sub in (1..5) %}
+                    <li class="sidebar__menu__list__submenu_item">
+                        <a href="{{site.baseurl}}/collection" class="sidebar__menu__list__submenu_item_link {% if forloop.index == 2 %}  is-active {% endif %}">
 			                подкатегория {{forloop.index}}
 			              </a>
-			            </li>
-			            {% endfor %}
-			          </ul>
-			          <!-- sidebar__menu__list__submenu -->
-			      {% endif %}
-			    </li>
-			    <!-- sidebar__menu__list_item -->
-			    {% endfor %}
-			  </ul>
-			</div>
-			<!-- sidebar__menu -->
+                    </li>
+                    {% endfor %}
+                </ul>
+                <!-- sidebar__menu__list__submenu -->
+                {% endif %}
+            </li>
+            <!-- sidebar__menu__list_item -->
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- sidebar__menu -->
 
-			{% unless page.title == 'Каталог' %}
-			<div class="sidebar__brands sidebar__block">
-			{% for brand in  (1..8) %}
-			    <a href="#" class="sidebar__brands_link">
-			      <img src="{{site.baseurl}}/img/banner-{{forloop.index}}.jpg" alt="">
-			    </a>
-			{% endfor %}
-			</div>
-			<!-- sidebar__brands -->
-			{% endunless %}
+    {% unless page.title == 'Каталог' %}
+    <div class="sidebar__brands sidebar__block">
+        {% for brand in (1..8) %}
+        <a href="#" class="sidebar__brands_link">
+            <img src="{{site.baseurl}}/img/banner-{{forloop.index}}.jpg" alt="">
+        </a>
+        {% endfor %}
+    </div>
+    <!-- sidebar__brands -->
+    {% endunless %}
 
-			<div class="sidebar__widget sidebar__block">
-			  <h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile">
-			    Название блока
-			    <button class="sidebar__block_headline_opener  ht">
-			   	 <i class="fa fa-plus-circle"></i>
-			    </button>
-			  </h3>
+    <div class="sidebar__widget sidebar__block">
+        <h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile">
+            Название блока
+            <button class="sidebar__block_headline_opener  ht">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </h3>
 
-			  <div class="sidebar__widget_content sidebar__block_content">
-			    <ol class="sidebar__widget_content_list">
-			    {% for link in (1..7) %}
-			      <li class="sidebar__widget_content_list_item">
-			        <a href="#" class="sidebar__widget_content_list_item_link">
+        <div class="sidebar__widget_content sidebar__block_content">
+            <ol class="sidebar__widget_content_list">
+                {% for link in (1..7) %}
+                <li class="sidebar__widget_content_list_item">
+                    <a href="#" class="sidebar__widget_content_list_item_link">
 			          Название продукта Lorem ipsum dolor sit. {{forloop.index}}
 			        </a>
-			      </li>
-			    {% endfor %}
-			    </ol>
-			  </div>
-			  <!-- sidebar__widget_content -->
-			</div>
-			<!-- sidebar__widget -->
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <!-- sidebar__widget_content -->
+    </div>
+    <!-- sidebar__widget -->
 
-			<div class="sidebar__widget sidebar__block">
-			  <h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile">
-			   Новинки
-			    <button class="sidebar__block_headline_opener  ht">
-			   	 <i class="fa fa-plus-circle"></i>
-			    </button>
-			  </h3>
+    <div class="sidebar__widget sidebar__block">
+        <h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile">
+            Новинки
+            <button class="sidebar__block_headline_opener  ht">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </h3>
 
-			  <div class="sidebar__widget_content sidebar__block_content">
-			  {% for item in (1..3)  %}
-			  	<div class="sidebar__widget_content_item">
-			    	
-			    </div>
-			  {% endfor %}
-			    
-			  </div>
-			  <!-- sidebar__widget_content -->
-			</div>
-			<!-- sidebar__widget -->
-     </aside>
-      <!-- sidebar -->
+        <div class="sidebar__widget_content sidebar__block_content">
+            {% for item in (1..3) %}
+            <div class="sidebar__widget_content_item">
+				<a href="product.html" class="sidebar__widget_content_item_img-link">
+					<img src="{{site.baseurl}}/img/product-img-{{forloop.index}}.png" alt="">
+				</a>
+				<div class="sidebar__widget_content_item_info">
+					<a href="#" class="sidebar__widget_content_item_info_link">
+						Название продукта
+					</a>
+					<span class="sidebar__widget_content_item_info_price">4500 Руб</span>
+					<span class="sidebar__widget_content_item_info_old-price">5500 Руб</span>
+				</div>
+				<!-- sidebar__widget_content_item_info -->
+            </div>
+            <!-- sidebar__widget_content_item -->
+            {% endfor %}
+        </div>
+        <!-- sidebar__widget_content -->
+    </div>
+    <!-- sidebar__widget -->
+
+    <div class="sidebar__widget sidebar__block">
+        <h3 class="sidebar__widget_headline sidebar__block_headline js_openSidebarBlockMobile">
+            Информация
+            <button class="sidebar__block_headline_opener  ht">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </h3>
+
+        <div class="sidebar__widget_content sidebar__block_content">
+           
+            <div class="sidebar__widget_content_links"> 
+            {% for link in (1..7) %}
+				<a href="#" class="sidebar__widget_content_links_item {% if forloop.index == 2 %} is-active {% endif %}">
+				<i class="fa fa-angle-right"></i>
+				Пункт меню {{forloop.index}}
+				</a>  
+				{% endfor %}
+            </div>
+            <!-- sidebar__widget_content_links -->
+          
+        </div>
+        <!-- sidebar__widget_content -->
+    </div>
+    <!-- sidebar__widget -->
+
+
+</aside>
+<!-- sidebar -->
