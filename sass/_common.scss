@@ -877,6 +877,9 @@ body.swiped {
     margin-bottom: 10px;
     &:hover, &.is-active{
         color: #444544;
+        .fa{
+            color: #7e7e7e;
+        }
     }
     .fa{
          color: #ccc;
