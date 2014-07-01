@@ -913,10 +913,33 @@ body.swiped {
 
         &_item {
             float: left;
+            position: relative;
             width: 30%;
             border-radius: 5px;
             overflow: hidden;
             margin-left: 3%;
+            &_qview{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                @include no-style;
+                background-color: #93222B;
+                padding: 2px;
+                cursor: pointer;
+                .fa{
+                    font-size: 23px;
+                    color: #fff;
+                }
+                &:hover{
+                    background:#7E7E7E;
+                }
+            }
+            &:hover  &_qview{
+               
+                    display: block;
+                
+            }
             @include manualMedia(1000px) {
                 width: 47%;
                 margin-bottom: 30px;
@@ -1076,6 +1099,9 @@ body.swiped {
             padding-bottom: 30px;
             border-radius: 0;
             margin-left: 0;
+            &_qview{
+                display: none;
+            }
             &:not(:last-child){
                 border-bottom: 1px solid #ccc;
             }
