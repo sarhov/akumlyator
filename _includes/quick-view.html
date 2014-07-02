@@ -25,6 +25,48 @@ $(document).ready(function() {
 
 <div class="ht">
     <div class="quick-view{{forloop.index}}_{{include.type}}">
-        text {{forloop.index}}
+        <article class="quick-view__item">
+            <a href="" class="quick-view__item_img-link">
+                <img src="{{site.baseurl}}/img/product-img-{{forloop.index}}.png" alt="">
+                <div class="quick-view__item_info">
+                    <a href="" class="quick-view__item_info_title-link">Здесь идет название продукта</a>
+                    <div class="quick-view__item_info_properties">
+                        <table class="quick-view__item_info_properties_table">
+                        {% for i in (1..3) %}
+                           <tr>
+                                <td>вопрос{{forloop.index}}: </td>
+                                <td>ответ{{forloop.index}} </td>
+                            </tr>
+                        {% endfor %}
+
+                        </table>
+                    </div>
+                    <!-- quick-view__item_info_properties -->
+                    <div class="quick-view__item_info_availability">
+                        <span class="quick-view__item_info_availability_key">Доступность:</span>
+                        <span class="quick-view__item_info_availability_value in-stock">Есть в наличии</span>
+                        <span class="quick-view__item_info_availability_value not-in-stock ht">Нет в наличии</span>
+                    </div>
+                    <!-- quick-view__item_info_availability -->
+
+                    <div class="quick-view__item_info_prices">
+                        <span class="quick-view__item_info_prices_new-price"></span>
+                        <span class="quick-view__item_info_prices_old-price"></span>
+                    </div>
+                    <!-- quick-view_item_info_prices -->
+
+                    <div class="quick-view__item_info_buyzone">
+                         <button class="quick-view__item_info_buyzone_buy g-button js-addToCart">Купить</button>
+                                 <a href="#" class="quick-view__item_info_buyzone_compare js-addToCompare">
+            <i class="fa fa-bar-chart-o"></i>
+            <span class="quick-view__item_info_buyzone_compare_text js-compareText">
+                Сравнить
+            </span>
+        </a>
+                    </div>
+                </div>
+                <!-- quick-view_item_info -->
+            </a>
+        </article>
     </div>
 </div>
